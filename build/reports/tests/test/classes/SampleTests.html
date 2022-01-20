@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.950s</div>
+<div class="counter">3.681s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">ShouldGetAllUsers</td>
-<td class="success">6.950s</td>
+<td class="success">ShouldCreateUser</td>
+<td class="success">3.681s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,183 +87,35 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>HTTP/1.1 200 OK
+<pre>HTTP/1.1 201 Created
 Server: nginx
-Date: Thu, 20 Jan 2022 04:53:17 GMT
+Date: Thu, 20 Jan 2022 09:00:43 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-ETag: W/&quot;d04e4ff2aa16f028c240f0158491bbae&quot;
+Location: https://gorest.co.in/public/v1/users/2021
+ETag: W/&quot;0438b9800a15882d3bd0a8aad087cd5b&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 40ad256a-7d93-4c89-813d-265a604bd936
-X-Runtime: 0.006040
+X-Request-Id: a8991eaf-5e34-4c0c-910b-8a0d102c629b
+X-Runtime: 0.016339
 Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
-Content-Encoding: gzip
 
 {
-    &quot;meta&quot;: {
-        &quot;pagination&quot;: {
-            &quot;total&quot;: 1426,
-            &quot;pages&quot;: 72,
-            &quot;page&quot;: 1,
-            &quot;limit&quot;: 20,
-            &quot;links&quot;: {
-                &quot;previous&quot;: null,
-                &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
-                &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
-            }
-        }
-    },
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Pres. Chaitan Embranthiri&quot;,
-            &quot;email&quot;: &quot;chaitan_pres_embranthiri@schimmel-dare.io&quot;,
-            &quot;gender&quot;: &quot;male&quot;,
-            &quot;status&quot;: &quot;active&quot;
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;name&quot;: &quot;Dhyaneshwar Jha&quot;,
-            &quot;email&quot;: &quot;jha_dhyaneshwar@frami.name&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;name&quot;: &quot;Ms. Gandharva Pillai&quot;,
-            &quot;email&quot;: &quot;gandharva_ms_pillai@prohaska-gleason.biz&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;active&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;name&quot;: &quot;Saraswati Khan&quot;,
-            &quot;email&quot;: &quot;khan_saraswati@koepp-huels.info&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;name&quot;: &quot;Girja Chaturvedi&quot;,
-            &quot;email&quot;: &quot;girja_chaturvedi@bauch-hirthe.name&quot;,
-            &quot;gender&quot;: &quot;male&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;name&quot;: &quot;Diptendu Patel&quot;,
-            &quot;email&quot;: &quot;diptendu_patel@shields.io&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;name&quot;: &quot;Ujjwal Mahajan VM&quot;,
-            &quot;email&quot;: &quot;ujjwal_vm_mahajan@boehm.io&quot;,
-            &quot;gender&quot;: &quot;male&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;name&quot;: &quot;Padma Bharadwaj&quot;,
-            &quot;email&quot;: &quot;padma_bharadwaj@leannon-ritchie.com&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;active&quot;
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;name&quot;: &quot;Vasudeva Kaur&quot;,
-            &quot;email&quot;: &quot;vasudeva_kaur@bogisich-volkman.io&quot;,
-            &quot;gender&quot;: &quot;male&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;name&quot;: &quot;Shridevi Bandopadhyay&quot;,
-            &quot;email&quot;: &quot;bandopadhyay_shridevi@beer.biz&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;name&quot;: &quot;Aanandaswarup Nair&quot;,
-            &quot;email&quot;: &quot;nair_aanandaswarup@kovacek.com&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;name&quot;: &quot;Devesh Bhattacharya&quot;,
-            &quot;email&quot;: &quot;bhattacharya_devesh@bergnaum.io&quot;,
-            &quot;gender&quot;: &quot;male&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;name&quot;: &quot;Leela Mishra&quot;,
-            &quot;email&quot;: &quot;mishra_leela@lueilwitz-oberbrunner.org&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;name&quot;: &quot;Agneya Pilla DDS&quot;,
-            &quot;email&quot;: &quot;pilla_dds_agneya@schmeler-mueller.org&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 25,
-            &quot;name&quot;: &quot;Aadidev Bhattacharya&quot;,
-            &quot;email&quot;: &quot;bhattacharya_aadidev@kilback-abernathy.net&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;active&quot;
-        },
-        {
-            &quot;id&quot;: 26,
-            &quot;name&quot;: &quot;Suman Desai&quot;,
-            &quot;email&quot;: &quot;desai_suman@johns.com&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 28,
-            &quot;name&quot;: &quot;Alok Joshi&quot;,
-            &quot;email&quot;: &quot;alok_joshi@moore-daniel.name&quot;,
-            &quot;gender&quot;: &quot;male&quot;,
-            &quot;status&quot;: &quot;active&quot;
-        },
-        {
-            &quot;id&quot;: 29,
-            &quot;name&quot;: &quot;Divaakar Johar&quot;,
-            &quot;email&quot;: &quot;divaakar_johar@marks.com&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;active&quot;
-        },
-        {
-            &quot;id&quot;: 30,
-            &quot;name&quot;: &quot;Chandradev Ganaka&quot;,
-            &quot;email&quot;: &quot;chandradev_ganaka@waelchi-wolf.co&quot;,
-            &quot;gender&quot;: &quot;male&quot;,
-            &quot;status&quot;: &quot;inactive&quot;
-        },
-        {
-            &quot;id&quot;: 33,
-            &quot;name&quot;: &quot;Trilochan Pilla&quot;,
-            &quot;email&quot;: &quot;pilla_trilochan@bechtelar.info&quot;,
-            &quot;gender&quot;: &quot;female&quot;,
-            &quot;status&quot;: &quot;active&quot;
-        }
-    ]
+    &quot;meta&quot;: null,
+    &quot;data&quot;: {
+        &quot;id&quot;: 2021,
+        &quot;name&quot;: &quot;Tenali Ramakrishna&quot;,
+        &quot;email&quot;: &quot;tenali.ramakrishna@203.com&quot;,
+        &quot;gender&quot;: &quot;male&quot;,
+        &quot;status&quot;: &quot;active&quot;
+    }
 }
 </pre>
 </span>
@@ -276,7 +128,7 @@ Content-Encoding: gzip
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 20 Jan, 2022 10:23:19 AM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 20 Jan, 2022 2:30:44 PM</p>
 </div>
 </div>
 </body>

@@ -1,200 +1,30 @@
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Server: nginx
-%Date: Thu, 20 Jan 2022 04:53:17 GMT
+%Date: Thu, 20 Jan 2022 09:00:43 GMT
 /Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 !X-XSS-Protection: 1; mode=block
 !X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 )X-Permitted-Cross-Domain-Policies: none
 2Referrer-Policy: strict-origin-when-cross-origin
-,ETag: W/"d04e4ff2aa16f028c240f0158491bbae"
+5Location: https://gorest.co.in/public/v1/users/2021
+,ETag: W/"0438b9800a15882d3bd0a8aad087cd5b"
 4Cache-Control: max-age=0, private, must-revalidate
-4X-Request-Id: 40ad256a-7d93-4c89-813d-265a604bd936
-X-Runtime: 0.006040
+4X-Request-Id: a8991eaf-5e34-4c0c-910b-8a0d102c629b
+X-Runtime: 0.016339
 @Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
-Content-Encoding: gzip
 
 {
-    "meta": {
-        "pagination": {
-            "total": 1426,
-            "pages": 72,
-            "page": 1,
-            "limit": 20,
-            "links": {
-"                "previous": null,
-J                "current": "https://gorest.co.in/public/v1/users?page=1",
-F                "next": "https://gorest.co.in/public/v1/users?page=2"
-            }
-
-        }
-    },
-    "data": [
-
-        {
-            "id": 6,
-1            "name": "Pres. Chaitan Embranthiri",
-B            "email": "chaitan_pres_embranthiri@schimmel-dare.io",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 11,
-'            "name": "Dhyaneshwar Jha",
-3            "email": "jha_dhyaneshwar@frami.name",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 13,
-,            "name": "Ms. Gandharva Pillai",
-A            "email": "gandharva_ms_pillai@prohaska-gleason.biz",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 14,
-&            "name": "Saraswati Khan",
-8            "email": "khan_saraswati@koepp-huels.info",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 15,
-(            "name": "Girja Chaturvedi",
-;            "email": "girja_chaturvedi@bauch-hirthe.name",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 16,
-&            "name": "Diptendu Patel",
-2            "email": "diptendu_patel@shields.io",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 17,
-)            "name": "Ujjwal Mahajan VM",
-3            "email": "ujjwal_vm_mahajan@boehm.io",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 18,
-'            "name": "Padma Bharadwaj",
-<            "email": "padma_bharadwaj@leannon-ritchie.com",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 19,
-%            "name": "Vasudeva Kaur",
-:            "email": "vasudeva_kaur@bogisich-volkman.io",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 20,
--            "name": "Shridevi Bandopadhyay",
-7            "email": "bandopadhyay_shridevi@beer.biz",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 21,
-*            "name": "Aanandaswarup Nair",
-7            "email": "nair_aanandaswarup@kovacek.com",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 22,
-+            "name": "Devesh Bhattacharya",
-8            "email": "bhattacharya_devesh@bergnaum.io",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 23,
-$            "name": "Leela Mishra",
-?            "email": "mishra_leela@lueilwitz-oberbrunner.org",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 24,
-(            "name": "Agneya Pilla DDS",
->            "email": "pilla_dds_agneya@schmeler-mueller.org",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 25,
-,            "name": "Aadidev Bhattacharya",
-C            "email": "bhattacharya_aadidev@kilback-abernathy.net",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 26,
-#            "name": "Suman Desai",
-.            "email": "desai_suman@johns.com",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 28,
-"            "name": "Alok Joshi",
-5            "email": "alok_joshi@moore-daniel.name",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 29,
-&            "name": "Divaakar Johar",
-1            "email": "divaakar_johar@marks.com",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 30,
-)            "name": "Chandradev Ganaka",
-:            "email": "chandradev_ganaka@waelchi-wolf.co",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 33,
-'            "name": "Trilochan Pilla",
-7            "email": "pilla_trilochan@bechtelar.info",
-             "gender": "female",
-            "status": "active"
-
-        }
-    ]
+    "meta": null,
+    "data": {
+        "id": 2021,
+&        "name": "Tenali Ramakrishna",
+/        "email": "tenali.ramakrishna@203.com",
+        "gender": "male",
+        "status": "active"
+    }
 }
