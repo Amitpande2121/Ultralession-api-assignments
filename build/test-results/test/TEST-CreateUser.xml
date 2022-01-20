@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreateUser" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-20T14:58:30" hostname="DESKTOP-9TLMHNQ" time="5.398">
+  <properties/>
+  <testcase name="ShouldCreateFemaleUser" classname="CreateUser" time="4.842"/>
+  <testcase name="ShouldCreateMaleUser" classname="CreateUser" time="0.55"/>
+  <system-out><![CDATA[HTTP/1.1 201 Created
+Server: nginx
+Date: Thu, 20 Jan 2022 14:58:33 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Location: https://gorest.co.in/public/v1/users/2769
+ETag: W/"556c5f4c408c0b7d7f16fcf57d6facc2"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 443e6df5-3376-4cb2-82ff-cd91a53c1098
+X-Runtime: 0.013072
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+
+{
+    "meta": null,
+    "data": {
+        "id": 2769,
+        "name": "Aditi tai rao",
+        "email": "Adatirao@22.com",
+        "gender": "female",
+        "status": "active"
+    }
+}
+HTTP/1.1 201 Created
+Server: nginx
+Date: Thu, 20 Jan 2022 14:58:35 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Location: https://gorest.co.in/public/v1/users/2770
+ETag: W/"2b919378aefadd32ff0d1acdd1b11b3c"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 09cf4785-cf08-4695-99ce-cedcf3f53365
+X-Runtime: 0.014398
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+
+{
+    "meta": null,
+    "data": {
+        "id": 2770,
+        "name": "Amitpande",
+        "email": "Amitpande@22.com",
+        "gender": "male",
+        "status": "active"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

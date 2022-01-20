@@ -1,200 +1,60 @@
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Server: nginx
-%Date: Thu, 20 Jan 2022 10:08:02 GMT
+%Date: Thu, 20 Jan 2022 14:58:33 GMT
 /Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 !X-XSS-Protection: 1; mode=block
 !X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 )X-Permitted-Cross-Domain-Policies: none
 2Referrer-Policy: strict-origin-when-cross-origin
-,ETag: W/"65448b16c124709ae5178e4db95f8d52"
+5Location: https://gorest.co.in/public/v1/users/2769
+,ETag: W/"556c5f4c408c0b7d7f16fcf57d6facc2"
 4Cache-Control: max-age=0, private, must-revalidate
-4X-Request-Id: 9ce53cdb-9e2c-49af-9420-25869d469bef
-X-Runtime: 0.008316
+4X-Request-Id: 443e6df5-3376-4cb2-82ff-cd91a53c1098
+X-Runtime: 0.013072
 @Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
-Content-Encoding: gzip
 
 {
-    "meta": {
-        "pagination": {
-            "total": 1709,
-            "pages": 86,
-            "page": 1,
-            "limit": 20,
-            "links": {
-"                "previous": null,
-J                "current": "https://gorest.co.in/public/v1/users?page=1",
-F                "next": "https://gorest.co.in/public/v1/users?page=2"
-            }
-
-        }
-    },
-    "data": [
-
-        {
-            "id": 93,
-#            "name": "Harit Saini",
-.            "email": "harit_saini@nienow.io",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 94,
-+            "name": "Bhagirathi Bhat PhD",
-@            "email": "phd_bhagirathi_bhat@harvey-cummings.net",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 95,
-$            "name": "Ekaksh Pilla",
-7            "email": "ekaksh_pilla@spencer-miller.io",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 96,
-(            "name": "Akshita Prajapat",
-:            "email": "prajapat_akshita@fahey-wunsch.net",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 97,
-&            "name": "Gautami Khanna",
-2            "email": "khanna_gautami@feest.info",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 98,
-'            "name": "Damayanti Adiga",
-5            "email": "damayanti_adiga@franecki.com",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 99,
-'            "name": "Hamsini Acharya",
-5            "email": "acharya_hamsini@jacobson.net",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 100,
-%            "name": "Anunay Achari",
-=            "email": "achari_anunay@bashirian-kshlerin.org",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 101,
-%            "name": "Ananta Achari",
-2            "email": "ananta_achari@schaden.org",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 102,
-&            "name": "Anil Devar DVM",
-7            "email": "devar_dvm_anil@cassin-bauch.co",
-             "gender": "female",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 103,
-$            "name": "Kirti Tagore",
-2            "email": "tagore_kirti@lubowitz.org",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 104,
-!            "name": "Kali Nair",
-,            "email": "kali_nair@doyle.net",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 105,
-*            "name": "Bhooshit Nambeesan",
-8            "email": "bhooshit_nambeesan@daugherty.co",
-             "gender": "female",
-            "status": "active"
-        },
-
-        {
-            "id": 106,
-$            "name": "Vasanti Asan",
-0            "email": "asan_vasanti@hickle.org",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 107,
-$            "name": "Akroor Patil",
-8            "email": "patil_akroor@wyman-anderson.org",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 108,
-$            "name": "Amrit Chopra",
-5            "email": "amrit_chopra@senger-ward.com",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 110,
-%            "name": "Chandra Devar",
-1            "email": "chandra_devar@lemke.name",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 111,
-(            "name": "Bhoj Namboothiri",
->            "email": "namboothiri_bhoj@jenkins-nicolas.info",
-            "gender": "male",
-!            "status": "inactive"
-        },
-
-        {
-            "id": 112,
-&            "name": "Tanirika Sinha",
-=            "email": "sinha_tanirika@schamberger-kunze.biz",
-            "gender": "male",
-            "status": "active"
-        },
-
-        {
-            "id": 113,
-$            "name": "Nirbhay Guha",
-?            "email": "nirbhay_guha@stoltenberg-leuschke.name",
-             "gender": "female",
-            "status": "active"
-
-        }
-    ]
+    "meta": null,
+    "data": {
+        "id": 2769,
+!        "name": "Aditi tai rao",
+$        "email": "Adatirao@22.com",
+        "gender": "female",
+        "status": "active"
+    }
 }
+HTTP/1.1 201 Created
+Server: nginx
+%Date: Thu, 20 Jan 2022 14:58:35 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+!X-XSS-Protection: 1; mode=block
+!X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+)X-Permitted-Cross-Domain-Policies: none
+2Referrer-Policy: strict-origin-when-cross-origin
+5Location: https://gorest.co.in/public/v1/users/2770
+,ETag: W/"2b919378aefadd32ff0d1acdd1b11b3c"
+4Cache-Control: max-age=0, private, must-revalidate
+4X-Request-Id: 09cf4785-cf08-4695-99ce-cedcf3f53365
+X-Runtime: 0.014398
+@Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+
+{
+    "meta": null,
+    "data": {
+        "id": 2770,
+        "name": "Amitpande",
+%        "email": "Amitpande@22.com",
+        "gender": "male",
+        "status": "active"
+    }
+}
