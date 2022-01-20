@@ -13,6 +13,9 @@ dependencies {
 
     implementation 'org.testng:testng:7.5'
     testImplementation group: 'org.testng', name: 'testng', version: '7.5'
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '4.4.0'
+
 
 }
 

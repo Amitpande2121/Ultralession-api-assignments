@@ -1,7 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SampleTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-20T04:24:22" hostname="DESKTOP-9TLMHNQ" time="0.011">
+<testsuite name="SampleTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-20T04:53:11" hostname="DESKTOP-9TLMHNQ" time="6.95">
   <properties/>
-  <testcase name="ShouldAddSomething" classname="SampleTests" time="0.011"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="ShouldGetAllUsers" classname="SampleTests" time="6.95"/>
+  <system-out><![CDATA[HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 20 Jan 2022 04:53:17 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+ETag: W/"d04e4ff2aa16f028c240f0158491bbae"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 40ad256a-7d93-4c89-813d-265a604bd936
+X-Runtime: 0.006040
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+{
+    "meta": {
+        "pagination": {
+            "total": 1426,
+            "pages": 72,
+            "page": 1,
+            "limit": 20,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 6,
+            "name": "Pres. Chaitan Embranthiri",
+            "email": "chaitan_pres_embranthiri@schimmel-dare.io",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 11,
+            "name": "Dhyaneshwar Jha",
+            "email": "jha_dhyaneshwar@frami.name",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 13,
+            "name": "Ms. Gandharva Pillai",
+            "email": "gandharva_ms_pillai@prohaska-gleason.biz",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 14,
+            "name": "Saraswati Khan",
+            "email": "khan_saraswati@koepp-huels.info",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 15,
+            "name": "Girja Chaturvedi",
+            "email": "girja_chaturvedi@bauch-hirthe.name",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 16,
+            "name": "Diptendu Patel",
+            "email": "diptendu_patel@shields.io",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 17,
+            "name": "Ujjwal Mahajan VM",
+            "email": "ujjwal_vm_mahajan@boehm.io",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 18,
+            "name": "Padma Bharadwaj",
+            "email": "padma_bharadwaj@leannon-ritchie.com",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 19,
+            "name": "Vasudeva Kaur",
+            "email": "vasudeva_kaur@bogisich-volkman.io",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 20,
+            "name": "Shridevi Bandopadhyay",
+            "email": "bandopadhyay_shridevi@beer.biz",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 21,
+            "name": "Aanandaswarup Nair",
+            "email": "nair_aanandaswarup@kovacek.com",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 22,
+            "name": "Devesh Bhattacharya",
+            "email": "bhattacharya_devesh@bergnaum.io",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 23,
+            "name": "Leela Mishra",
+            "email": "mishra_leela@lueilwitz-oberbrunner.org",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 24,
+            "name": "Agneya Pilla DDS",
+            "email": "pilla_dds_agneya@schmeler-mueller.org",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 25,
+            "name": "Aadidev Bhattacharya",
+            "email": "bhattacharya_aadidev@kilback-abernathy.net",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 26,
+            "name": "Suman Desai",
+            "email": "desai_suman@johns.com",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 28,
+            "name": "Alok Joshi",
+            "email": "alok_joshi@moore-daniel.name",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 29,
+            "name": "Divaakar Johar",
+            "email": "divaakar_johar@marks.com",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 30,
+            "name": "Chandradev Ganaka",
+            "email": "chandradev_ganaka@waelchi-wolf.co",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 33,
+            "name": "Trilochan Pilla",
+            "email": "pilla_trilochan@bechtelar.info",
+            "gender": "female",
+            "status": "active"
+        }
+    ]
+}
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
