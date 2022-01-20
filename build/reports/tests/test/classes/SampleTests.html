@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.975s</div>
+<div class="counter">5.502s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">ShouldCreateUser</td>
-<td class="success">4.975s</td>
+<td class="success">ShouldGetAllUsers</td>
+<td class="success">5.502s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,35 +87,183 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>HTTP/1.1 201 Created
+<pre>HTTP/1.1 200 OK
 Server: nginx
-Date: Thu, 20 Jan 2022 09:58:34 GMT
+Date: Thu, 20 Jan 2022 10:08:02 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Location: https://gorest.co.in/public/v1/users/2116
-ETag: W/&quot;5eb026d8c89790b77c211c50c2f4b179&quot;
+ETag: W/&quot;65448b16c124709ae5178e4db95f8d52&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7cfb3eeb-a3ee-4617-8e9c-4586cc0c7780
-X-Runtime: 0.015840
+X-Request-Id: 9ce53cdb-9e2c-49af-9420-25869d469bef
+X-Runtime: 0.008316
 Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
+Content-Encoding: gzip
 
 {
-    &quot;meta&quot;: null,
-    &quot;data&quot;: {
-        &quot;id&quot;: 2116,
-        &quot;name&quot;: &quot;Tenali Ramakrishna&quot;,
-        &quot;email&quot;: &quot;tenali.ramakrishna@206.com&quot;,
-        &quot;gender&quot;: &quot;male&quot;,
-        &quot;status&quot;: &quot;active&quot;
-    }
+    &quot;meta&quot;: {
+        &quot;pagination&quot;: {
+            &quot;total&quot;: 1709,
+            &quot;pages&quot;: 86,
+            &quot;page&quot;: 1,
+            &quot;limit&quot;: 20,
+            &quot;links&quot;: {
+                &quot;previous&quot;: null,
+                &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
+                &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
+            }
+        }
+    },
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 93,
+            &quot;name&quot;: &quot;Harit Saini&quot;,
+            &quot;email&quot;: &quot;harit_saini@nienow.io&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 94,
+            &quot;name&quot;: &quot;Bhagirathi Bhat PhD&quot;,
+            &quot;email&quot;: &quot;phd_bhagirathi_bhat@harvey-cummings.net&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 95,
+            &quot;name&quot;: &quot;Ekaksh Pilla&quot;,
+            &quot;email&quot;: &quot;ekaksh_pilla@spencer-miller.io&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 96,
+            &quot;name&quot;: &quot;Akshita Prajapat&quot;,
+            &quot;email&quot;: &quot;prajapat_akshita@fahey-wunsch.net&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 97,
+            &quot;name&quot;: &quot;Gautami Khanna&quot;,
+            &quot;email&quot;: &quot;khanna_gautami@feest.info&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;inactive&quot;
+        },
+        {
+            &quot;id&quot;: 98,
+            &quot;name&quot;: &quot;Damayanti Adiga&quot;,
+            &quot;email&quot;: &quot;damayanti_adiga@franecki.com&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 99,
+            &quot;name&quot;: &quot;Hamsini Acharya&quot;,
+            &quot;email&quot;: &quot;acharya_hamsini@jacobson.net&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;inactive&quot;
+        },
+        {
+            &quot;id&quot;: 100,
+            &quot;name&quot;: &quot;Anunay Achari&quot;,
+            &quot;email&quot;: &quot;achari_anunay@bashirian-kshlerin.org&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;inactive&quot;
+        },
+        {
+            &quot;id&quot;: 101,
+            &quot;name&quot;: &quot;Ananta Achari&quot;,
+            &quot;email&quot;: &quot;ananta_achari@schaden.org&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 102,
+            &quot;name&quot;: &quot;Anil Devar DVM&quot;,
+            &quot;email&quot;: &quot;devar_dvm_anil@cassin-bauch.co&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;inactive&quot;
+        },
+        {
+            &quot;id&quot;: 103,
+            &quot;name&quot;: &quot;Kirti Tagore&quot;,
+            &quot;email&quot;: &quot;tagore_kirti@lubowitz.org&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 104,
+            &quot;name&quot;: &quot;Kali Nair&quot;,
+            &quot;email&quot;: &quot;kali_nair@doyle.net&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 105,
+            &quot;name&quot;: &quot;Bhooshit Nambeesan&quot;,
+            &quot;email&quot;: &quot;bhooshit_nambeesan@daugherty.co&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 106,
+            &quot;name&quot;: &quot;Vasanti Asan&quot;,
+            &quot;email&quot;: &quot;asan_vasanti@hickle.org&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 107,
+            &quot;name&quot;: &quot;Akroor Patil&quot;,
+            &quot;email&quot;: &quot;patil_akroor@wyman-anderson.org&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;inactive&quot;
+        },
+        {
+            &quot;id&quot;: 108,
+            &quot;name&quot;: &quot;Amrit Chopra&quot;,
+            &quot;email&quot;: &quot;amrit_chopra@senger-ward.com&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;inactive&quot;
+        },
+        {
+            &quot;id&quot;: 110,
+            &quot;name&quot;: &quot;Chandra Devar&quot;,
+            &quot;email&quot;: &quot;chandra_devar@lemke.name&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 111,
+            &quot;name&quot;: &quot;Bhoj Namboothiri&quot;,
+            &quot;email&quot;: &quot;namboothiri_bhoj@jenkins-nicolas.info&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;inactive&quot;
+        },
+        {
+            &quot;id&quot;: 112,
+            &quot;name&quot;: &quot;Tanirika Sinha&quot;,
+            &quot;email&quot;: &quot;sinha_tanirika@schamberger-kunze.biz&quot;,
+            &quot;gender&quot;: &quot;male&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        },
+        {
+            &quot;id&quot;: 113,
+            &quot;name&quot;: &quot;Nirbhay Guha&quot;,
+            &quot;email&quot;: &quot;nirbhay_guha@stoltenberg-leuschke.name&quot;,
+            &quot;gender&quot;: &quot;female&quot;,
+            &quot;status&quot;: &quot;active&quot;
+        }
+    ]
 }
 </pre>
 </span>
@@ -128,7 +276,7 @@ Vary: Origin
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 20 Jan, 2022 3:28:36 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 20 Jan, 2022 3:38:05 PM</p>
 </div>
 </div>
 </body>

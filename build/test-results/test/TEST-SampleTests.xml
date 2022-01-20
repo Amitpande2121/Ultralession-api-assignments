@@ -1,36 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SampleTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-20T09:58:31" hostname="DESKTOP-9TLMHNQ" time="4.975">
+<testsuite name="SampleTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-20T10:07:59" hostname="DESKTOP-9TLMHNQ" time="5.502">
   <properties/>
-  <testcase name="ShouldCreateUser" classname="SampleTests" time="4.975"/>
-  <system-out><![CDATA[HTTP/1.1 201 Created
+  <testcase name="ShouldGetAllUsers" classname="SampleTests" time="5.502"/>
+  <system-out><![CDATA[HTTP/1.1 200 OK
 Server: nginx
-Date: Thu, 20 Jan 2022 09:58:34 GMT
+Date: Thu, 20 Jan 2022 10:08:02 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Location: https://gorest.co.in/public/v1/users/2116
-ETag: W/"5eb026d8c89790b77c211c50c2f4b179"
+ETag: W/"65448b16c124709ae5178e4db95f8d52"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 7cfb3eeb-a3ee-4617-8e9c-4586cc0c7780
-X-Runtime: 0.015840
+X-Request-Id: 9ce53cdb-9e2c-49af-9420-25869d469bef
+X-Runtime: 0.008316
 Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
+Content-Encoding: gzip
 
 {
-    "meta": null,
-    "data": {
-        "id": 2116,
-        "name": "Tenali Ramakrishna",
-        "email": "tenali.ramakrishna@206.com",
-        "gender": "male",
-        "status": "active"
-    }
+    "meta": {
+        "pagination": {
+            "total": 1709,
+            "pages": 86,
+            "page": 1,
+            "limit": 20,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 93,
+            "name": "Harit Saini",
+            "email": "harit_saini@nienow.io",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 94,
+            "name": "Bhagirathi Bhat PhD",
+            "email": "phd_bhagirathi_bhat@harvey-cummings.net",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 95,
+            "name": "Ekaksh Pilla",
+            "email": "ekaksh_pilla@spencer-miller.io",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 96,
+            "name": "Akshita Prajapat",
+            "email": "prajapat_akshita@fahey-wunsch.net",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 97,
+            "name": "Gautami Khanna",
+            "email": "khanna_gautami@feest.info",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 98,
+            "name": "Damayanti Adiga",
+            "email": "damayanti_adiga@franecki.com",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 99,
+            "name": "Hamsini Acharya",
+            "email": "acharya_hamsini@jacobson.net",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 100,
+            "name": "Anunay Achari",
+            "email": "achari_anunay@bashirian-kshlerin.org",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 101,
+            "name": "Ananta Achari",
+            "email": "ananta_achari@schaden.org",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 102,
+            "name": "Anil Devar DVM",
+            "email": "devar_dvm_anil@cassin-bauch.co",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 103,
+            "name": "Kirti Tagore",
+            "email": "tagore_kirti@lubowitz.org",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 104,
+            "name": "Kali Nair",
+            "email": "kali_nair@doyle.net",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 105,
+            "name": "Bhooshit Nambeesan",
+            "email": "bhooshit_nambeesan@daugherty.co",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 106,
+            "name": "Vasanti Asan",
+            "email": "asan_vasanti@hickle.org",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 107,
+            "name": "Akroor Patil",
+            "email": "patil_akroor@wyman-anderson.org",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 108,
+            "name": "Amrit Chopra",
+            "email": "amrit_chopra@senger-ward.com",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 110,
+            "name": "Chandra Devar",
+            "email": "chandra_devar@lemke.name",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 111,
+            "name": "Bhoj Namboothiri",
+            "email": "namboothiri_bhoj@jenkins-nicolas.info",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 112,
+            "name": "Tanirika Sinha",
+            "email": "sinha_tanirika@schamberger-kunze.biz",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 113,
+            "name": "Nirbhay Guha",
+            "email": "nirbhay_guha@stoltenberg-leuschke.name",
+            "gender": "female",
+            "status": "active"
+        }
+    ]
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
