@@ -1,3 +1,4 @@
+import Users.UsersClient;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
@@ -12,12 +13,12 @@ public class CreateUser {
         String body = "{\n" +
                 "  \"name\": \"Aditi tai rao\",\n" +
                 "  \"gender\": \"Female\",\n" +
-                "  \"email\": \"Adatirao@22.com\",\n" +
+                "  \"email\": \"Adatirao@25.com\",\n" +
                 "  \"status\": \"active\"\n" +
                 "}";
-        CreateUser(body)
+       new UsersClient().CreateUser(body)
                 .then().log().all().statusCode(201).body("data.id", Matchers.notNullValue())
-                .body("data.email", Matchers.equalTo("Adatirao@22.com"));
+                .body("data.email", Matchers.equalTo("Adatirao@25.com"));
     }
         @Test
         public void ShouldCreateMaleUser() {
@@ -25,26 +26,12 @@ public class CreateUser {
             String body= "{\n" +
                     "  \"name\": \"Amitpande\",\n" +
                     "  \"gender\": \"Male\",\n" +
-                    "  \"email\": \"Amitpande@22.com\",\n" +
+                    "  \"email\": \"Amitpande@25.com\",\n" +
                     "  \"status\": \"active\"\n" +
                     "}";
-            CreateUser(body)
+          new UsersClient().CreateUser(body)
                     .then().log().all().statusCode(201).body("data.id", Matchers.notNullValue())
-                    .body("data.email", Matchers.equalTo("Amitpande@22.com"));
+                    .body("data.email", Matchers.equalTo("Amitpande@25.com"));
         }
-
-
-
-
-    private static Response CreateUser(String bodu) {
-        return given()
-                .header("Accept", "application/json")
-                .header("Content-Type", "application/json")
-                .header("Authorization", "Bearer 77970b9d769496fe209c6251a9ca0ada2e88866ca6ece14b99b380154a3998d7")
-                .body(bodu)
-
-                .when().post("https://gorest.co.in/public/v1/users");
     }
 
-
-}

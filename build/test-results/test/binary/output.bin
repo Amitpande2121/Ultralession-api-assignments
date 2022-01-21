@@ -1,60 +1,200 @@
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Server: nginx
-%Date: Thu, 20 Jan 2022 14:58:33 GMT
+%Date: Fri, 21 Jan 2022 08:49:06 GMT
 /Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Vary: Accept-Encoding
 X-Frame-Options: SAMEORIGIN
 !X-XSS-Protection: 1; mode=block
 !X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 )X-Permitted-Cross-Domain-Policies: none
 2Referrer-Policy: strict-origin-when-cross-origin
-5Location: https://gorest.co.in/public/v1/users/2769
-,ETag: W/"556c5f4c408c0b7d7f16fcf57d6facc2"
+,ETag: W/"927c789ed2f6127db7ea770dce9fa2ed"
 4Cache-Control: max-age=0, private, must-revalidate
-4X-Request-Id: 443e6df5-3376-4cb2-82ff-cd91a53c1098
-X-Runtime: 0.013072
+4X-Request-Id: a0307737-764e-4631-b3b6-896bd7a00fe9
+X-Runtime: 0.006990
 @Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
+Content-Encoding: gzip
 
 {
-    "meta": null,
-    "data": {
-        "id": 2769,
-!        "name": "Aditi tai rao",
-$        "email": "Adatirao@22.com",
-        "gender": "female",
-        "status": "active"
-    }
+    "meta": {
+        "pagination": {
+            "total": 1512,
+            "pages": 76,
+            "page": 1,
+            "limit": 20,
+            "links": {
+"                "previous": null,
+J                "current": "https://gorest.co.in/public/v1/users?page=1",
+F                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+
+        }
+    },
+    "data": [
+
+        {
+            "id": 2078,
+7            "name": "API Monitoring:0cb057 (Updated)",
+:            "email": "apimonitoring0cb057@synthetic.com",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 37,
+%            "name": "lâm ??p trai",
+*            "email": "lamnt.vlg@vnpt.vn",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 33,
+%            "name": "Lâm ??p trai",
+<            "email": "dvm_diksha_adiga@reichel-hammes.net",
+             "gender": "female",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 34,
+            "name": "lâm",
+@            "email": "mehrotra_vasudev_ms@parisian-stamm.info",
+             "gender": "female",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 14,
+)            "name": "Bhargava Banerjee",
+;            "email": "_bhargava_msgr@legros-turcotte.com",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 36,
+-            "name": "Vaijayanti Menon uppp",
+5            "email": "vaijayanti_menon@graham.info",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 38,
++            "name": "Anagh Devar upppppp",
+1            "email": "devar_anagh@fritsch.name",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 1684,
+!            "name": "rush pach",
+3            "email": "rushipachpute440@gmail.com",
+            "gender": "male",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 32,
+*            "name": "Baala Mukhopadhyay",
+7            "email": "mukhopadhyay_baala@klocko.info",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 49,
+'            "name": "Kama Mehrotra23",
+9            "email": "kama_mehrotra@kiehn-leannon.info",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 29,
+"            "name": "thaydoiten",
+/            "email": "wrrrwudrbqmy@gmail.com",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 60,
+%            "name": "aaaaaaaaaaaaa",
+>            "email": "sr_abbott_vidhya@wolff-mccullough.com",
+            "gender": "male",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 35,
+            "name": "lâm",
++            "email": "lamnt1.vlg@vnpt.vn",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 39,
+             "name": "Tusadbsa",
+=            "email": "msgr_somayaji_chetanaanand@kuphal.io",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 40,
++            "name": "Mahesh Varmanxdsafs",
+1            "email": "varman_mahesh@russel.biz",
+             "gender": "female",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 61,
++            "name": "Msgr. Radha Chopra2",
+3            "email": "chopra_msgr_radha@upton.io",
+             "gender": "female",
+!            "status": "inactive"
+        },
+
+        {
+            "id": 43,
+#            "name": "Tu?n update",
+)            "email": "123213@gmail.com",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 41,
+            "name": "tu?n",
+5            "email": "tagore_prasad_vm@padberg.net",
+             "gender": "female",
+            "status": "active"
+        },
+
+        {
+            "id": 42,
+!            "name": "IHT8CMGR2",
+/            "email": "fk8pewenjmos@gmail.com",
+            "gender": "male",
+            "status": "active"
+        },
+
+        {
+            "id": 45,
+!            "name": "E5VQPR442",
+/            "email": "zja45gj6p9bx@gmail.com",
+            "gender": "male",
+            "status": "active"
+
+        }
+    ]
 }
-HTTP/1.1 201 Created
-Server: nginx
-%Date: Thu, 20 Jan 2022 14:58:35 GMT
-/Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-X-Frame-Options: SAMEORIGIN
-!X-XSS-Protection: 1; mode=block
-!X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-)X-Permitted-Cross-Domain-Policies: none
-2Referrer-Policy: strict-origin-when-cross-origin
-5Location: https://gorest.co.in/public/v1/users/2770
-,ETag: W/"2b919378aefadd32ff0d1acdd1b11b3c"
-4Cache-Control: max-age=0, private, must-revalidate
-4X-Request-Id: 09cf4785-cf08-4695-99ce-cedcf3f53365
-X-Runtime: 0.014398
-@Strict-Transport-Security: max-age=63072000; includeSubDomains
-Vary: Origin
-
-{
-    "meta": null,
-    "data": {
-        "id": 2770,
-        "name": "Amitpande",
-%        "email": "Amitpande@22.com",
-        "gender": "male",
-        "status": "active"
-    }
-}
