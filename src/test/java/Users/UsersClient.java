@@ -5,6 +5,8 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
 public class UsersClient {
+
+
     public static Response CreateUser(String bodu) {
         return given()
                 .header("Accept", "application/json")
@@ -14,4 +16,11 @@ public class UsersClient {
 
                 .when().post("https://gorest.co.in/public/v1/users");
     }
+
+    public Response GetAllUsers() {
+        return given()
+                .when().get("https://gorest.co.in/public/v1/users");
+    }
 }
+
+

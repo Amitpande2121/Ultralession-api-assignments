@@ -1,37 +1,49 @@
 import Users.UsersClient;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.util.UUID;
 
 import static io.restassured.RestAssured.given;
 
 public class CreateUser {
+    private UsersClient UserClient;
+    @BeforeClass
+    public void BeforeClass(){
+        UserClient=new UsersClient();
+    }
 
     @Test
     public void ShouldCreateFemaleUser() {
+      String email= String.format("%s@gmail.com", UUID.randomUUID());
 
-        String body = "{\n" +
+        String body = String.format("{\n" +
                 "  \"name\": \"Aditi tai rao\",\n" +
                 "  \"gender\": \"Female\",\n" +
-                "  \"email\": \"Adatirao@25.com\",\n" +
+                "  \"email\": \"%s\",\n" +
                 "  \"status\": \"active\"\n" +
-                "}";
-       new UsersClient().CreateUser(body)
+                "}",email);
+
+       UserClient.CreateUser(body)
                 .then().log().all().statusCode(201).body("data.id", Matchers.notNullValue())
-                .body("data.email", Matchers.equalTo("Adatirao@25.com"));
+                .body("data.email", Matchers.equalTo(email));
     }
         @Test
         public void ShouldCreateMaleUser() {
+      String email= String.format("%s@gmail.com", UUID.randomUUID());
 
-            String body= "{\n" +
+            String body= String.format("{\n" +
                     "  \"name\": \"Amitpande\",\n" +
                     "  \"gender\": \"Male\",\n" +
-                    "  \"email\": \"Amitpande@25.com\",\n" +
+                    "  \"email\": \"%s\",\n" +
                     "  \"status\": \"active\"\n" +
-                    "}";
-          new UsersClient().CreateUser(body)
+                    "}",email);
+
+          UserClient.CreateUser(body)
                     .then().log().all().statusCode(201).body("data.id", Matchers.notNullValue())
-                    .body("data.email", Matchers.equalTo("Amitpande@25.com"));
+                    .body("data.email", Matchers.equalTo(email));
         }
     }
 
