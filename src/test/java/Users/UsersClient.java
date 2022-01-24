@@ -1,5 +1,6 @@
 package Users;
 
+import Users.Create.CreateUserRequestBody;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
@@ -7,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class UsersClient {
 
 
-    public static Response CreateUser(String bodu) {
+    public static Response CreateUser(CreateUserRequestBody bodu) {
         return given()
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")

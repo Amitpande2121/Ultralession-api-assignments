@@ -1,3 +1,4 @@
+import Users.Create.CreateUserRequestBody;
 import Users.UsersClient;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
@@ -18,31 +19,28 @@ public class CreateUser {
     @Test
     public void ShouldCreateFemaleUser() {
       String email= String.format("%s@gmail.com", UUID.randomUUID());
+      String name="Aditi tai rao";
+      String gender="Female";
+      String status="active";
 
-        String body = String.format("{\n" +
-                "  \"name\": \"Aditi tai rao\",\n" +
-                "  \"gender\": \"Female\",\n" +
-                "  \"email\": \"%s\",\n" +
-                "  \"status\": \"active\"\n" +
-                "}",email);
+        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, gender, email, status);
 
-       UserClient.CreateUser(body)
+        UserClient.CreateUser(requestBody)
                 .then().log().all().statusCode(201).body("data.id", Matchers.notNullValue())
                 .body("data.email", Matchers.equalTo(email));
     }
         @Test
         public void ShouldCreateMaleUser() {
       String email= String.format("%s@gmail.com", UUID.randomUUID());
+      String name="Amitpande";
+      String gender="Male";
+      String status="active";
 
-            String body= String.format("{\n" +
-                    "  \"name\": \"Amitpande\",\n" +
-                    "  \"gender\": \"Male\",\n" +
-                    "  \"email\": \"%s\",\n" +
-                    "  \"status\": \"active\"\n" +
-                    "}",email);
+            CreateUserRequestBody requestBody = new CreateUserRequestBody(name,gender,email,status);
 
-          UserClient.CreateUser(body)
-                    .then().log().all().statusCode(201).body("data.id", Matchers.notNullValue())
+            UserClient.CreateUser(requestBody)
+                    .then().log().all()
+                    .statusCode(201).body("data.id", Matchers.notNullValue())
                     .body("data.email", Matchers.equalTo(email));
         }
     }

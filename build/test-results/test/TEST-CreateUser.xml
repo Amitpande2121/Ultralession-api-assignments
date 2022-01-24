@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreateUser" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-24T02:37:15" hostname="DESKTOP-9TLMHNQ" time="6.014">
+  <properties/>
+  <testcase name="ShouldCreateFemaleUser" classname="CreateUser" time="5.425"/>
+  <testcase name="ShouldCreateMaleUser" classname="CreateUser" time="0.583"/>
+  <system-out><![CDATA[HTTP/1.1 201 Created
+Server: nginx
+Date: Mon, 24 Jan 2022 02:37:20 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+Location: https://gorest.co.in/public/v1/users/1694
+ETag: W/"a6f24deca3a9265e2e21be0e484ada7f"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 259c875b-b00e-4991-9748-cc30a48556ae
+X-Runtime: 0.038347
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+
+{
+    "meta": null,
+    "data": {
+        "id": 1694,
+        "name": "Aditi tai rao",
+        "email": "1d15ddd4-2849-4bcd-b2fb-fa34adc27e30@gmail.com",
+        "gender": "female",
+        "status": "active"
+    }
+}
+HTTP/1.1 201 Created
+Server: nginx
+Date: Mon, 24 Jan 2022 02:37:22 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+Location: https://gorest.co.in/public/v1/users/1695
+ETag: W/"66728d0f749b8dcca54c7999b776c217"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: f86e2870-e10a-4fed-87d2-c343d603a714
+X-Runtime: 0.027907
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+
+{
+    "meta": null,
+    "data": {
+        "id": 1695,
+        "name": "Amitpande",
+        "email": "4b4de0ee-78d2-4744-90eb-eb29f6484c8c@gmail.com",
+        "gender": "male",
+        "status": "active"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
