@@ -18,7 +18,9 @@ public class CreateUserNegativeTests {
        String email="Adatirao202.com";
        String status="active";
 
-        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, gender, email, status);
+
+        CreateUserRequestBody requestBody = CreateUserRequestBody.builder()
+                .name(name).gender(gender).email(email).status(status).build();
 
         UsersClient.CreateUser(requestBody).then().log().all()
                 .statusCode(422)

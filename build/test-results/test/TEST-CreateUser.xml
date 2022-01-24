@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CreateUser" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-24T02:37:15" hostname="DESKTOP-9TLMHNQ" time="6.014">
+<testsuite name="CreateUser" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-24T02:58:08" hostname="DESKTOP-9TLMHNQ" time="6.888">
   <properties/>
-  <testcase name="ShouldCreateFemaleUser" classname="CreateUser" time="5.425"/>
-  <testcase name="ShouldCreateMaleUser" classname="CreateUser" time="0.583"/>
+  <testcase name="ShouldCreateFemaleUser" classname="CreateUser" time="6.289"/>
+  <testcase name="ShouldCreateMaleUser" classname="CreateUser" time="0.59"/>
   <system-out><![CDATA[HTTP/1.1 201 Created
 Server: nginx
-Date: Mon, 24 Jan 2022 02:37:20 GMT
+Date: Mon, 24 Jan 2022 02:58:13 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -18,27 +18,27 @@ Referrer-Policy: strict-origin-when-cross-origin
 X-RateLimit-Limit: 90
 X-RateLimit-Remaining: 89
 X-RateLimit-Reset: 1
-Location: https://gorest.co.in/public/v1/users/1694
-ETag: W/"a6f24deca3a9265e2e21be0e484ada7f"
+Location: https://gorest.co.in/public/v1/users/1712
+ETag: W/"db076d51e3cfcb84c0e43dec7b3705c3"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 259c875b-b00e-4991-9748-cc30a48556ae
-X-Runtime: 0.038347
+X-Request-Id: ebb032e0-6916-4d9a-bff8-a4e0e8142d4a
+X-Runtime: 0.028633
 Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
 
 {
     "meta": null,
     "data": {
-        "id": 1694,
+        "id": 1712,
         "name": "Aditi tai rao",
-        "email": "1d15ddd4-2849-4bcd-b2fb-fa34adc27e30@gmail.com",
+        "email": "8d405643-8ee4-4932-9d3f-74cf9a4db7bc@gmail.com",
         "gender": "female",
         "status": "active"
     }
 }
 HTTP/1.1 201 Created
 Server: nginx
-Date: Mon, 24 Jan 2022 02:37:22 GMT
+Date: Mon, 24 Jan 2022 02:58:16 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -51,20 +51,20 @@ Referrer-Policy: strict-origin-when-cross-origin
 X-RateLimit-Limit: 90
 X-RateLimit-Remaining: 89
 X-RateLimit-Reset: 1
-Location: https://gorest.co.in/public/v1/users/1695
-ETag: W/"66728d0f749b8dcca54c7999b776c217"
+Location: https://gorest.co.in/public/v1/users/1713
+ETag: W/"dec9a74b2276b929df727f6acdd5c055"
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: f86e2870-e10a-4fed-87d2-c343d603a714
-X-Runtime: 0.027907
+X-Request-Id: 5ae8ddaa-f7ef-4d3e-bff7-6ee831cd835e
+X-Runtime: 0.041104
 Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
 
 {
     "meta": null,
     "data": {
-        "id": 1695,
+        "id": 1713,
         "name": "Amitpande",
-        "email": "4b4de0ee-78d2-4744-90eb-eb29f6484c8c@gmail.com",
+        "email": "080b6f3a-9d40-4574-85a4-e0ac7e1c9aa1@gmail.com",
         "gender": "male",
         "status": "active"
     }

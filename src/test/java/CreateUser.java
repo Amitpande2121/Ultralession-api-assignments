@@ -23,7 +23,11 @@ public class CreateUser {
       String gender="Female";
       String status="active";
 
-        CreateUserRequestBody requestBody = new CreateUserRequestBody(name, gender, email, status);
+
+        CreateUserRequestBody requestBody = CreateUserRequestBody.builder()
+                .name(name).gender(gender).email(email).status(status).build();
+
+
 
         UserClient.CreateUser(requestBody)
                 .then().log().all().statusCode(201).body("data.id", Matchers.notNullValue())
@@ -36,7 +40,9 @@ public class CreateUser {
       String gender="Male";
       String status="active";
 
-            CreateUserRequestBody requestBody = new CreateUserRequestBody(name,gender,email,status);
+
+            CreateUserRequestBody requestBody = CreateUserRequestBody.builder()
+                    .name(name).gender(gender).email(email).status(status).build();
 
             UserClient.CreateUser(requestBody)
                     .then().log().all()
